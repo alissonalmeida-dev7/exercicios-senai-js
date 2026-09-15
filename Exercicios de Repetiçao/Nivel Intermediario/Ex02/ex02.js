@@ -1,20 +1,17 @@
 let numAleatorio = Math.floor(Math.random() * 100) + 1;
-let palpite = 101;
+let palpite = Number(prompt("Qual seu palpite?"));
 
-
-while (palpite != numAleatorio) {
-    palpite = Number(prompt("Qual seu palpite?"));
+while (palpite !== numAleatorio) {
 
     if (palpite > numAleatorio) {
-        console.log(`${palpite}, Seu palpite é maior que o numero aleatorio.`)   
-    }
-
-    else if (palpite < numAleatorio) {
-        console.log(`${palpite}, Seu palpite é menor que o numero aleatorio.`)       
-    }
-
+        alert(`${palpite}, seu palpite é maior que o número aleatório.`);
+    } 
+    
     else {
-        console.log("Você acertou o numero.")       
+        alert(`${palpite}, seu palpite é menor que o número aleatório.`);
     }
+
+    palpite = Number(prompt("Tente novamente. Qual seu palpite?"));
 }
 
+alert(`Você acertou o número!\nO numero era: ${numAleatorio}.`);

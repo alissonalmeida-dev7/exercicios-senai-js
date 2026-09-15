@@ -55,8 +55,7 @@
 
 
 // //* FUNÇÕES NATIVAS JS
-
-//* FUNÇÃO MAP()
+// //* FUNÇÃO MAP()
 // Percorre uma lista e cria uma nova lista cm base em uma condição
 
 // let numeros = [1, 2, 3, 4];
@@ -107,12 +106,98 @@
 // //* FIND
 // Retorna o primeiro elemento que atende a condição
 
-let produtos = [
-    { id: 1, nome: "Teclado", preco: 50 }, // Produto
-    { id: 2, nome: "Mouse", preco: 30 },
-    { id: 2, nome: "Caderno", preco: 30 }
-]
+// let produtos = [
+//     { id: 1, nome: "Teclado", preco: 50 }, // Produto
+//     { id: 2, nome: "Mouse", preco: 30 },
+//     { id: 2, nome: "Caderno", preco: 30 }
+// ]
 
-let item = produtos.find(produto => produto.id === 2)
+// let item = produtos.find(produto => produto.id === 2)
 
-console.log(item)
+// console.log(item)
+
+
+// //* DIFERENÇA ENTRE O FILTER E FIND
+//* find -> retorna somente o primeiro elemento qie ele encontra com a condição
+//* filter -> retorna todos os elementos que enconra com a condição
+//* arrow function / lambda
+// let itemFiltrado = produtos.filter(produto => produto.id == 2);
+
+// console.log(itemFiltrado);
+
+// produtos.filter(function(produto) {
+//     produto.id === 2
+// });
+
+
+// //* SPLIT
+// Divide a string em partes, transformando em um array
+
+// let frase = "JS é top";
+
+// let palavras = frase.split(" ")
+// console.log(palavras)
+
+
+// //* TRIM
+// trim remove espaços no inicio e final de string
+// let nome = "        Paulo"
+// let nomeLimpo = nome.trim()
+
+// console.log(nome)
+// console.log(nomeLimpo)
+
+// //* INCLUDES
+// Verifica se existe um valor dentro de uma lista e retorna um booleano
+// verdadeiro ou falso
+
+// let frutas = ["maçã", "banana"];
+
+// let frutasIncludes = frutas.includes("maçã");
+// console.log(frutasIncludes); // true
+
+// toLoweCase() -> transforma o texto em minusculo
+// toUpperCase() -> transforma o texto em maiusculo
+
+// let nome = "KESSIA";
+// let cargo = "instrutora";
+
+// console.log(nome.toLowerCase()); // kessia
+// console.log(nome.toUpperCase()); // INSTRUTORA
+
+// //* FOREACH
+// let nomes = ["Guilherme", "João", "Maria"];
+
+// console.log(nomes);
+
+// nomes.forEach(nome => console.log(nome));
+
+
+// //* SOME
+// Verifica se pelo menos um item atende a condição
+// retrona booleano 
+
+// let numeros = [1, 3, 5, 8];
+
+// let temPar = numeros.some(num => num % 2 === 0);
+// console.log(temPar); // true 
+
+// //* EVERY
+// Verifica se TODOS os elementos atendem a confição
+
+// let todosPares = numeros.every(num => num % 2 === 0);
+// console.log(todosPares); // false 
+
+// //* SORT
+
+// Ordena os elementos do array
+// let numeros = [3, 10, 5, 2, 4];
+// let letras = ["c", "a", "x", "h"];
+
+// para letras
+// letras.sort();
+// console.log(letras);
+
+// para números
+// numeros.sort((a, b) => a - b);
+// console.log(numeros);
