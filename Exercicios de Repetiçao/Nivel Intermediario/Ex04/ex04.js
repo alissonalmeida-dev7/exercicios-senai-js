@@ -1,4 +1,3 @@
-const btnEnviar = document.getElementById("enviar");
 let numUsuario = Number(prompt("Digite a senha?"));
 let senha = Number(1234);
 
